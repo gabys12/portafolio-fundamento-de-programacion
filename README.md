@@ -6,8 +6,8 @@ Es para indicarle al programa a partir de qué lugar empieza a existir, qué nom
 ## Nombrando una variable
 cuando nombremos una variables hay que seguir sus reglas basicas como que no puede empezar por números y debe estar en minúscula. Al ubicar más palabras para nombrar una variable tendremos que separarlas con un guión bajo y debe tener un máximo de 15 caracteres.
 
-``` variable_num  = ```
-variable_uno = 
+´´´variable_num  = ```
+
 
 ## Asignando valores a una variable
 
