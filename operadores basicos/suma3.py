@@ -1,6 +1,6 @@
 #suma con numeros decimales
 
-a = (12 + 1.4)
+a = (18 + 1.4)
 b = (10 + 35.50)
 c = 213.21
 
