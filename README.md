@@ -9,9 +9,12 @@ cuando nombremos una variables hay que seguir sus reglas basicas como que no pue
  variable_num  = 
  ```
 
-
 ## Asignando valores a una variable
-
+Se puede asignar diferentes valores sean numeros o palabras.
+```python
+variable_num  = 12
+variable_num  = [GALLETAS, TORTAS] 
+```
 ## Operadores básicos
 
 ### Suma
