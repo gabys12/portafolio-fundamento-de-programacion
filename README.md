@@ -116,35 +116,128 @@ z = -40.25
 ## Casting en Python
 un cast o casting significa convertir un tipo de dato a otro, tipos de datos como los int, string o float.
 Existen dos:
+
 Conversión implícita: Es realizada automáticamente por Python. Sucede cuando realizamos ciertas operaciónes con dos tipos distintos.
+
 ```python
 a = 5   # <class 'int'>  
 b = 1.3 # <class 'float'>  
 a = a + b  
 print(a)       # 6.3
 print(type(a)) # <class 'float'>
-´´´
+```
+
 Conversión explícita: Es realizada expresamente por nosotros, como por ejemplo convertir de str a int con str().
+
 ```python
 a = 3.5  
 print(type(a)) # <class 'float'>  
 a = str(a)  
 print(type(a)) # <class 'str'>
-´´´
+```
 ## List
-
+Las listas en Python son un tipo de dato que permite almacenar datos de cualquier tipo. Son mutables y dinámicas, lo cual es la principal diferencia con los sets y las tuplas, una lista sea crea con [ ] separando sus elementos con comas " , "
+```python
+lista = list("123456789b")                
+print(lista)                              #['1', '2', '3', '4', '5', '6', '7', '8', '9', 'b']
+```
 ## Tuple
-
+Las tuplas se utilizan para almacenar varios elementos en una sola variable. Es una colección ordenada e inmutable significa que no pueden ser modificadas una vez declaradas, y en vez de inicializarse con corchetes se hace con ( ). 
+```python
+tupla = (12, 2003, 2022)
+print(tupla)                     #(12, 2003, 2022)
+```
 ## Dictionary
+Los diccionarios se utilizan para almacenar valores de datos en pares clave:valor.
+Un diccionario es una colección ordenada*, modificable y que no admite duplicados.
+Todos los elementos en el diccionario se encuentran encerrados en un par de corchetes { }.
+```python
+thisdict = {  
+  "brand": "TOYOTA",  
+  "model": "Hilux",  
+  "year": 2019  
+}
+print(thisdict)
 
-# Tomando decisiones
+[salida]: [TOYOTA Hilux 2019]
+```
+# Tomando decisiones📂
 
 ## Sentencia if
+"if" permite que un programa ejecute unas instrucciones cuando se cumplan una condición. La estructura de control if, else, permite que un programa ejecute unas instrucciones cuando se cumple una condición y otras instrucciones cuando no se cumple esa condición. En inglés "if" significa "si" (condición) y "else" significa "si no". 
 
+#Calcular el mayor de dos números enteros introducidos por el teclado
+#Entrada
+num1= int(input('Ingreso num 1:'))
+num2= int(input('Ingreso num 2:'))
+```python
+#Proceso
+if num1 > num2:
+    #Salida
+    print('El numero mayor es:',num1)
+elif num2> num1:
+    #Salida
+    print('El numero mayor es:',num2)
+else:
+    #Salida
+    print('Los números son iguales')
+```
 ## Ciclo For
-
+El bucle for se utiliza para recorrer los elementos de un objeto iterable (lista, tupla, conjunto, diccionario, …) y ejecutar un bloque de código. En cada paso de la iteración se tiene en cuenta a un único elemento del objeto iterable, sobre el cuál se pueden aplicar una serie de operaciones. 
+```python
+países  = [Peru, Ecuador, Argentina , Colombia]
+for g in países :
+    print(g)
+#Su print se verá así:
+#Peru 
+#Ecuador
+#Argentina
+#Colombia
+```
 ## Ciclo While
-
+El uso del while nos permite ejecutar una sección de código repetidas veces, de ahí su nombre. El código se ejecutará mientras una condición determinada se cumpla. Cuando se deje de cumplir, se saldrá del bucle y se continuará la ejecución normal.
+```python
+#Cuando se deje de cumplir la orden, se saldrá del bucle
+x = 0
+while x < 5:
+    x +=1
+    print(x)
+#Su print se verá así:
+#1
+#2
+#3
+#4
+#5
+```
 ## Break
-
+break permite terminar con la ejecución del bucle. Esto significa que una vez se encuentra la palabra break, el bucle se habrá terminado. 
+```python
+#Cuando se encuentre con el número 3, el programa terminará
+x = 0
+while x < 5:
+    x +=1
+    if x==3:
+        print("Se encontró el 3")
+        break
+    print(x)
+#Su print se verá así:
+# 1
+# 2
+# Se encontró el 3
+```
 ## Continue
+El continue se salta todo el código restante en la iteración actual y vuelve al principio en el caso de que aún queden iteraciones por completar. Es que el continue no rompe el bucle, si no que pasa a la siguiente iteración saltando el código pendiente. 
+```python
+#Cuando se encuentre con el número 3, se saltará y continuará con los demás print
+x = 0
+while x < 5:
+    x +=1
+    if x==3:
+        continue
+    print(x)
+#Su print se verá así:
+# 1
+# 2
+# 4
+# 5
+```
