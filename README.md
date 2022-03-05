@@ -114,7 +114,23 @@ z = -40.25
 
  ```
 ## Casting en Python
-
+un cast o casting significa convertir un tipo de dato a otro, tipos de datos como los int, string o float.
+Existen dos:
+Conversión implícita: Es realizada automáticamente por Python. Sucede cuando realizamos ciertas operaciónes con dos tipos distintos.
+```python
+a = 5   # <class 'int'>  
+b = 1.3 # <class 'float'>  
+a = a + b  
+print(a)       # 6.3
+print(type(a)) # <class 'float'>
+´´´
+Conversión explícita: Es realizada expresamente por nosotros, como por ejemplo convertir de str a int con str().
+```python
+a = 3.5  
+print(type(a)) # <class 'float'>  
+a = str(a)  
+print(type(a)) # <class 'str'>
+´´´
 ## List
 
 ## Tuple
