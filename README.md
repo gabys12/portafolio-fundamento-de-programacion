@@ -165,12 +165,12 @@ print(thisdict)
 
 ## Sentencia if
 "if" permite que un programa ejecute unas instrucciones cuando se cumplan una condición. La estructura de control if, else, permite que un programa ejecute unas instrucciones cuando se cumple una condición y otras instrucciones cuando no se cumple esa condición. En inglés "if" significa "si" (condición) y "else" significa "si no". 
-
+```python
 #Calcular el mayor de dos números enteros introducidos por el teclado
 #Entrada
 num1= int(input('Ingreso num 1:'))
 num2= int(input('Ingreso num 2:'))
-```python
+
 #Proceso
 if num1 > num2:
     #Salida
